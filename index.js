@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer")
 const generateMarkdown = require("./utils/generateMarkdown")
+const fs = require('fs')
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -22,13 +23,26 @@ const askQuestions = () => {
         },
         {
             type: 'input',
-            name: 'github',
+            name: 'link',
             message: 'What is the link to the github repository? (Required)',
-            validate: githubInput => {
-                if (githubInput) {
+            validate: linkInput => {
+                if (linkInput) {
                     return true
                 } else {
                     console.log("Please enter a github link")
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'What is the description for your project? (Required)',
+            validate: descInput => {
+                if (descInput) {
+                    return true
+                } else {
+                    console.log("Please enter a description!")
                     return false
                 }
             }
@@ -48,10 +62,10 @@ const askQuestions = () => {
         },
         {
             type: 'input',
-            name: 'githubName',
+            name: 'username',
             message: 'What is your Github username? (Required)',
-            validate: projectInput => {
-                if (projectInput) {
+            validate: usernameInput => {
+                if (usernameInput) {
                     return true
                 } else {
                     console.log("Please enter your Github username!")
@@ -61,10 +75,10 @@ const askQuestions = () => {
         },
         {
             type: 'input',
-            name: 'project',
+            name: 'title',
             message: 'What is the title of your project? (Required)',
-            validate: projectInput => {
-                if (projectInput) {
+            validate: titleInput => {
+                if (titleInput) {
                     return true
                 } else {
                     console.log("Please enter your project title!")
@@ -73,56 +87,72 @@ const askQuestions = () => {
             }
         },
         {
-            type: 'confirm',
-            name: 'confirmInstall',
-            message: 'Would you like to add installation instructions?',
-            default: true
-        },
-        {
             type: 'input',
             name: 'install',
             message: 'Provide Installation instructions:',
-            when: ({ confirmInstall }) => confirmInstall
-        },
-        {
-            type: 'confirm',
-            name: 'confirmTest',
-            message: 'Would you like to include a section about testing?',
-            default: true
         },
         {
             type: 'input',
             name: 'test',
             message: 'Provide details about test coverage for this app:',
-            when: ({ confirmTest }) => confirmTest
         },
-        {
-            type: 'confirm',
-            name: 'confirmUsage',
-            message: 'Would you like to enter usage instructions?',
-            default: true
-        },
+
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide usage instructions',
-            when: ({ confirmUsage }) => confirmUsage
+            message: 'Provide usage instructions: ',
         },
         {
             type: 'input',
             name: 'license',
             message: 'Which license is this application covered under?'
         },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'Provide some guidelines for contributing to this project'
+        },
+        {
+            type: 'input',
+            name: 'contributors',
+            message: 'Provide the username for any additional contributors to this project'
+        }
 
 
     ])
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Writes the markdown to a readme.MD file
+const writeToFile = (fileName, data) => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            // if there's an error, reject the Promise and send the error to the .catch
+            if (err) {
+                reject(err)
+                return
+            } 
+            // resolve if no error
+            resolve({
+                ok: true,
+                message: 'File created!'
+            })
+        })
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
-
+function init() {
+    askQuestions()
+        .then(readmeData => {
+            console.log(readmeData)
+            return generateMarkdown(readmeData)
+    })
+    .then(readmeMarkdown => {
+        return writeToFile('./dist/readme.md', readmeMarkdown)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
 // Function call to initialize app
 init();
