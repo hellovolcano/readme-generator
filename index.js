@@ -103,19 +103,15 @@ const askQuestions = () => {
             message: 'Provide usage instructions: ',
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
-            message: 'Which license is this application covered under?'
+            message: 'Which license is this application covered under?',
+            choices: ['MIT','Apache 2.0', 'GPL 3.0','BSD','ISC','None']
         },
         {
             type: 'input',
             name: 'contributing',
             message: 'Provide some guidelines for contributing to this project'
-        },
-        {
-            type: 'input',
-            name: 'contributors',
-            message: 'Provide the username for any additional contributors to this project'
         }
 
 

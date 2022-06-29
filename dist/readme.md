@@ -1,39 +1,41 @@
-# Valerie
-  
-  Valerie Badge Placeholder
+# Portfolio: Valerie Gleason
+  ISC
   
   ## Description
 
-  Valerie
+  A portfolio of my work
   
   ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   
   The TOC will be added here
   
 
   ## Installation
-  Valerie
+  N/A
 
   ## Usage
-  Valerie
-
-  
-  This project is covered by the 
-  [Valerie](https://www.google.com)
-   license.
-  
+  N/A
 
   ## Contributing
 
-  Valerie
-
-  Contributions to this code base were done by Valerie and Valerie, Anne, Gleason
+  Don't
 
   ## Tests
-  Valerie
+  N/A
 
   ## Questions
 
-  To report issues, contact Valerie at Valerie
+  To report issues, contact Valerie at valerie.gleason@gmail.com
 
+  ## License
+  
+  This project is covered by the 
+  [ISC](https://www.google.com)
+   license.
+  
