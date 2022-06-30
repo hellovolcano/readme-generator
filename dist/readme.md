@@ -1,12 +1,12 @@
-# Nope
+# Sample Projects
   [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
     
   
   ## Description
 
-  Nope
+  A lovely way to display sample project readmes
 
-  #### [Nope](https://hellovolcano.github.io/random-movie-recs)
+  #### [Sample Projects](https://www.google.com)
   
   ## Table of Contents
   * [Installation](#installation)
@@ -24,14 +24,14 @@
 
   ## Contributing
 
-  N/A
+  All code submissions must be approved via PR
 
   ## Tests
   N/A
 
   ## Questions
 
-  For issues or questions, contact [VG](https://www.github.com/hellovolcano) at [hellovolcano@gmail.com](mailto:hellovolcano@gmail.com)
+  For issues or questions, contact [Valerie](https://www.github.com/hellovolcano) at [hellovolcano@gmail.com](mailto:hellovolcano@gmail.com)
 
   ## License
   This project is covered by the [BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause)
