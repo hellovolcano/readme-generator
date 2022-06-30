@@ -1,10 +1,12 @@
-# v
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Nope
+  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
     
   
   ## Description
 
-  v
+  Nope
+
+  #### [Nope](https://hellovolcano.github.io/random-movie-recs)
   
   ## Table of Contents
   * [Installation](#installation)
@@ -14,30 +16,25 @@
   * [Questions](#questions)
   * [License](#license)
 
-  
-  The TOC will be added here
-  
-
   ## Installation
-  v
+  N/A
 
   ## Usage
-  v
+  N/A
 
   ## Contributing
 
-  v
+  N/A
 
   ## Tests
-  v
+  N/A
 
   ## Questions
 
-  To report issues, contact v at v
+  For issues or questions, contact [VG](https://www.github.com/hellovolcano) at [hellovolcano@gmail.com](mailto:hellovolcano@gmail.com)
 
   ## License
-  
-  This project is covered by the 
-  [GPL 3.0](https://www.google.com)
-   license.
+  This project is covered by the [BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+     license.
+
   

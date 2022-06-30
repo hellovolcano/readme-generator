@@ -3,8 +3,6 @@ const inquirer = require("inquirer")
 const generateMarkdown = require("./utils/generateMarkdown")
 const fs = require('fs')
 
-// TODO: Create an array of questions for user input
-const questions = [];
 // User inquirer to ask a series of questions
 const askQuestions = () => {
     return inquirer.prompt([
@@ -17,45 +15,6 @@ const askQuestions = () => {
                     return true
                 } else {
                     console.log("Please enter your name!")
-                    return false
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'link',
-            message: 'What is the link to the github repository? (Required)',
-            validate: linkInput => {
-                if (linkInput) {
-                    return true
-                } else {
-                    console.log("Please enter a github link")
-                    return false
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'description',
-            message: 'What is the description for your project? (Required)',
-            validate: descInput => {
-                if (descInput) {
-                    return true
-                } else {
-                    console.log("Please enter a description!")
-                    return false
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'email',
-            message: 'What is your email address (Required)',
-            validate: emailInput => {
-                if (emailInput) {
-                    return true
-                } else {
-                    console.log("Please enter your email address")
                     return false
                 }
             }
@@ -75,6 +34,19 @@ const askQuestions = () => {
         },
         {
             type: 'input',
+            name: 'email',
+            message: 'What is your email address (Required)',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true
+                } else {
+                    console.log("Please enter your email address")
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'title',
             message: 'What is the title of your project? (Required)',
             validate: titleInput => {
@@ -88,33 +60,56 @@ const askQuestions = () => {
         },
         {
             type: 'input',
+            name: 'description',
+            message: 'Describe your project. What was your motivation for building it? What problem does it solve? (Required)',
+            validate: descInput => {
+                if (descInput) {
+                    return true
+                } else {
+                    console.log("Please enter a description!")
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'link',
+            message: 'What is the link to your deployed application? If the application is not deployed, link to the github repository. (Required)',
+            validate: linkInput => {
+                if (linkInput) {
+                    return true
+                } else {
+                    console.log("Please enter a Github link!")
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'install',
-            message: 'Provide Installation instructions:',
+            message: 'Provide any instructions someone will need to install your application:',
         },
         {
             type: 'input',
             name: 'test',
-            message: 'Provide details about test coverage for this app:',
+            message: 'Provide testing instructions for this app:',
         },
-
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide usage instructions: ',
+            message: 'Please provide usage instructions: ',
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'Provide some guidelines for contributing to this project:'
         },
         {
             type: 'list',
             name: 'license',
             message: 'Which license is this application covered under?',
             choices: ['MIT','Apache 2.0', 'GPL 3.0','BSD 3-Clause','ISC','None']
-        },
-        {
-            type: 'input',
-            name: 'contributing',
-            message: 'Provide some guidelines for contributing to this project'
         }
-
-
     ])
 }
 
@@ -144,7 +139,7 @@ function init() {
             return generateMarkdown(readmeData)
     })
     .then(readmeMarkdown => {
-        return writeToFile('./dist/readme.md', readmeMarkdown)
+        return writeToFile('./dist/README.md', readmeMarkdown)
     })
     .catch(err => {
         console.log(err)
