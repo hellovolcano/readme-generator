@@ -106,7 +106,7 @@ const askQuestions = () => {
             type: 'list',
             name: 'license',
             message: 'Which license is this application covered under?',
-            choices: ['MIT','Apache 2.0', 'GPL 3.0','BSD','ISC','None']
+            choices: ['MIT','Apache 2.0', 'GPL 3.0','BSD 3-Clause','ISC','None']
         },
         {
             type: 'input',

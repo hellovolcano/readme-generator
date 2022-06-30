@@ -1,9 +1,10 @@
-# Portfolio: Valerie Gleason
-  ISC
+# v
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+    
   
   ## Description
 
-  A portfolio of my work
+  v
   
   ## Table of Contents
   * [Installation](#installation)
@@ -11,31 +12,32 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [License](#license)
 
   
   The TOC will be added here
   
 
   ## Installation
-  N/A
+  v
 
   ## Usage
-  N/A
+  v
 
   ## Contributing
 
-  Don't
+  v
 
   ## Tests
-  N/A
+  v
 
   ## Questions
 
-  To report issues, contact Valerie at valerie.gleason@gmail.com
+  To report issues, contact v at v
 
   ## License
   
   This project is covered by the 
-  [ISC](https://www.google.com)
+  [GPL 3.0](https://www.google.com)
    license.
   
