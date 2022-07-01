@@ -1,12 +1,12 @@
-# Sample Projects
-  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# Readme Generator
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
   
   ## Description
 
-  A lovely way to display sample project readmes
+  This app builds you a professional readme for your application! You will use the command-line to answer a series of prompts and we'll give you a readme.
 
-  #### [Sample Projects](https://www.google.com)
+  #### [Readme Generator](https://www.github.com/hellovolcano/readme-generator)
   
   ## Table of Contents
   * [Installation](#installation)
@@ -17,24 +17,24 @@
   * [License](#license)
 
   ## Installation
-  N/A
+  You must use Node.JS to run this application in the command line.  You can download or clone this repository and then run 'node index' from the same directory the index.js file is in
 
   ## Usage
   N/A
 
   ## Contributing
 
-  All code submissions must be approved via PR
+  This repo is currently not open for contributions.
 
   ## Tests
-  N/A
+  No tests were included in this application
 
   ## Questions
 
-  For issues or questions, contact [Valerie](https://www.github.com/hellovolcano) at [hellovolcano@gmail.com](mailto:hellovolcano@gmail.com)
+  For issues or questions, contact [Valerie Gleason](https://www.github.com/hellovolcano) at [hellovolcano@gmail.com](mailto:hellovolcano@gmail.com)
 
   ## License
-  This project is covered by the [BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+  This project is covered by the [MIT](https://opensource.org/licenses/MIT)
      license.
 
   
