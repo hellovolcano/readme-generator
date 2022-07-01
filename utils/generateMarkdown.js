@@ -48,13 +48,25 @@ const renderLicenseLink = license => {
 // Return the licensing section, with a notice that includes a link to the readme.
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
-  if (!license) {
+  if (license === "None") {
     return ''
   }
   
-  return `This project is covered by the ${renderLicenseLink(license)} license.
+  return `
+  ## License 
+
+  This project is covered by the ${renderLicenseLink(license)} license.
 
   `
+}
+
+// Generate the link to the TOC for the license section, if the license is present
+const renderLicenseTOCLink = license => {
+  if (license === "None") {
+    return ''
+  }
+
+  return `* [License](#license)`
 }
 
 
@@ -72,16 +84,22 @@ const generateMarkdown = data => {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
+  ${renderLicenseTOCLink(data.license)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [License](#license)
+  
 
   ## Installation
+
+  You must install the following dependencies in order to use this application:
+
   ${data.install}
 
   ## Usage
   ${data.usage}
+
+  ${renderLicenseSection(data.license)}
 
   ## Contributing
 
@@ -94,8 +112,7 @@ const generateMarkdown = data => {
 
   For issues or questions, contact [${data.name}](https://www.github.com/${data.username}) at [${data.email}](mailto:${data.email})
 
-  ## License
-  ${renderLicenseSection(data.license)}
+
 `;
 }
 

@@ -11,30 +11,32 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
+  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [License](#license)
+  
 
   ## Installation
-  You must use Node.JS to run this application in the command line.  You can download or clone this repository and then run 'node index' from the same directory the index.js file is in
+
+  You must install the following dependencies in order to use this application:
+  
+  Node.JS 8.2
 
   ## Usage
   N/A
 
+  ## License
+  This project is covered by the [MIT](https://opensource.org/licenses/MIT) license.
+  
   ## Contributing
 
-  This repo is currently not open for contributions.
+  This repo is not open for contributions at this time.
 
   ## Tests
-  No automated tests were included in this application.
+  N/A
 
   ## Questions
 
   For issues or questions, contact [Valerie Gleason](https://www.github.com/hellovolcano) at [hellovolcano@gmail.com](mailto:hellovolcano@gmail.com)
 
-  ## License
-  This project is covered by the [MIT](https://opensource.org/licenses/MIT)
-     license.
-
-  

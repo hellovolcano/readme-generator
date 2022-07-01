@@ -87,7 +87,7 @@ const askQuestions = () => {
         {
             type: 'input',
             name: 'install',
-            message: 'Provide any instructions someone will need to install your application:',
+            message: 'Does your application require any dependencies to be installed? If so, list them here:',
         },
         {
             type: 'input',
@@ -100,15 +100,15 @@ const askQuestions = () => {
             message: 'Please provide usage instructions: ',
         },
         {
-            type: 'input',
-            name: 'contributing',
-            message: 'Provide some guidelines for contributing to this project:'
-        },
-        {
             type: 'list',
             name: 'license',
             message: 'Which license is this application covered under?',
             choices: ['MIT','Apache 2.0', 'GPL 3.0','BSD 3-Clause','ISC','None']
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: 'Provide some guidelines for contributing to this project:'
         }
     ])
 }
