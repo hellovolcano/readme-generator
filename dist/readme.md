@@ -1,12 +1,12 @@
-# Sample Project
-  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+# iStream uStream
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
   
   ## Description
 
-  This is a sample project that is meant for providing a readme sample.
+  You search for a movie, we tell you how to stream it! We built this app because we know how time consuming it can be to comb through so many streaming services to find that perfect movie to watch. You just tell us the movie, and we search dozens of streaming services for you, all with one click!
 
-  #### [Sample Project](https://www.github.com/hellovolcano/readme-generator)
+  #### [iStream uStream](https://hellovolcano.github.io/random-movie-recs)
   
   ## Table of Contents
   * [Installation](#installation)
@@ -21,7 +21,7 @@
 
   You must install the following dependencies in order to use this application:
 
-  NodeJS 8.2
+  N/A
 
   ## Usage
   N/A
@@ -29,7 +29,7 @@
   
   ## License 
 
-  This project is covered by the [BSD 3-Clause](https://opensource.org/licenses/BSD-3-Clause)
+  This project is covered by the [MIT](https://opensource.org/licenses/MIT)
      license.
 
   
